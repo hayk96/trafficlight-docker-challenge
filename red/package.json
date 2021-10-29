@@ -1,0 +1,16 @@
+{
+  "name": "trafficlight-app",
+  "version": "v1.0",
+  "description": "Traffic Light challenge with Docker",
+  "author": "Hayk Davtyan <GH: @hayk96>",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "pug": "3.0.2",
+    "serve-favicon": "2.5.0",
+    "express-ipfilter-secured": "0.3.3"
+  }
+}
