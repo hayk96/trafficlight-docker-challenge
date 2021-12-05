@@ -1,6 +1,7 @@
 // Init dependencies
 const express = require('express');
 const ipfilter = require('express-ipfilter-secured').IpFilter;
+const IpDeniedError = require('express-ipfilter-secured').IpDeniedError;
 var favicon = require('serve-favicon');
 var path = require('path');
 
@@ -45,6 +46,15 @@ app.use('/', (req, res) => {
     let joke_number = getRandomInt(10);
     data["joke"] = jokes[joke_number];
     res.render('/app/views/index.pug', data);
+});
+
+// Error handler
+app.use(function(err, req, res, _next) {
+    if (err instanceof IpDeniedError) {
+        res.setHeader("Content-Type", "text/html");
+        res.write("<p>Access Denied</p>");
+        res.end();
+    }
 });
 
 // Start server
