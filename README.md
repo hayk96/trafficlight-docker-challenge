@@ -91,9 +91,7 @@ By completing all the instructions of this project, at the end of it, you will h
 
 - the `nginx-proxy` container must listen to the following ports: `3000`, `4000` and `5000`. The mentioned ports should map to the web apps as follows: (3000 -> red-app, 4000 -> yellow-app, 5000 -> green-app). ***:bulb: This point must be implemented via [nginx_proxy_pass](http://nginx.org/en/docs/http/ngx_http_proxy_module.html)***.
 
-- restrict access of all web apps with the [Nginx HTTP Basic Authentication](https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/).
-
-If you have done all the points of Task1 correctly, by opening e.g. the link http://127.0.0.1:3000 on your browser, you should see the `red-app` page. The rest web apps should work with the same logic.
+If you have done all points of the Task1 correctly, by opening e.g. the link http://127.0.0.1:3000 on your browser, you should see the `red-app` page. The rest web apps should work with the same logic.
 
 ### :two: Task2: Running web apps with Nginx load balancing
 2.1 Run services via Docker Compose with the following requirements by using the web apps' images that you've built:
@@ -110,7 +108,9 @@ If you have done all the points of Task1 correctly, by opening e.g. the link htt
 
 2.3 Make load balancing of request for the all services. ***:bulb: This point must be implemented via [Nginx HTTP Load Balancing](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/).***
 
-If you have done all the points of Task2 correctly, by visiting with this link: http://127.0.0.1 first time you will see e.g. the `red-app`, visiting second time (or refreshing the page) you will see e.g. the `yellow-app`, and for the third time you will see the `green-app`.
+2.4 Restrict access of all web apps with the [Nginx HTTP Basic Authentication](https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/).
+
+If you have done all points of the Task2 correctly, by visiting with this link: http://127.0.0.1 first time you will see e.g. the `red-app`, visiting second time (or refreshing the page) you will see e.g. the `yellow-app`, and for the third time you will see the `green-app`.
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
