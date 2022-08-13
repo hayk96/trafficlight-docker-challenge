@@ -32,6 +32,8 @@ In this project are included a set of tasks designed for beginner Programmers, S
 This project consists of folders appropriately by the color names of a traffic light: red, yellow, and green. Each of them contains the source code of the appropriate web application.
 ```
 .
+├── _config.yml
+├── CODEOWNERS
 ├── LICENSE
 ├── README.md
 ├── red
