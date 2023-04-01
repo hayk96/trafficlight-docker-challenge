@@ -144,7 +144,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [license-shield]: https://img.shields.io/github/license/hayk96/trafficlight-docker-challenge.svg?style=for-the-badge
 [license-url]: https://github.com/hayk96/trafficlight-docker-challenge/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/hayk-davtyan-
+[linkedin-url]: https://linkedin.com/in/hayk96
 [medium-shield]: https://img.shields.io/badge/-Medium-black.svg?style=for-the-badge&logo=medium&colorB=555
 [medium-url]: https://hayk96.medium.com
 [stackoverflow-shield]: https://img.shields.io/badge/-Stackoverflow-black.svg?style=for-the-badge&logo=stackoverflow&colorB=555
