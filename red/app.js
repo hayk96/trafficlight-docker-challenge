@@ -9,7 +9,7 @@ var path = require('path');
 const allowed_subnet = ['172.20.0.0/16'];
 
 // Deny the gateway address of the network
-const denied_ip = ['172.20.0.1']
+const denied_ip = ['172.20.0.1'];
 
 // Initialize App
 const app = express();
