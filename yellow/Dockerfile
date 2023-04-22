@@ -13,7 +13,7 @@
 
 # 1.1.5 | Copy "app.js" file to working directory
 
-# 1.1.6 | Copy "index.pug" and "favicon.ico" files to working directory
+# 1.1.6 | Copy the "index.pug" and "favicon.ico" files to the "/app/views" directory
 
 # 1.1.7 | The port "80" should be exposed by the container
 
