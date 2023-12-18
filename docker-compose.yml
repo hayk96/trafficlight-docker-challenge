@@ -11,7 +11,7 @@ services:
     image: trafficlight/green:v1.0
     build:
       context: ./green/
-      dockerfile: ./dockerfile
+      dockerfile: ./Dockerfile
     networks:
       - traffic-light
 
@@ -19,14 +19,14 @@ services:
     image: trafficlight/yellow:v1.0
     build:
       context: ./yellow/
-      dockerfile: ./dockerfile
+      dockerfile: ./Dockerfile
     networks:
       - traffic-light
 
   nginx-load-balancer:
     build:
       context: ./nginx-load-balancer/
-      dockerfile: ./Dockerfile
+      dockerfile: ./dockerfile
     ports:
       - "80:80"
       - "3000:3000"
