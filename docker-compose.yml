@@ -1,5 +1,6 @@
 services:
   red-app:
+    image: trafficlight/red:v1.0
     build:
       context: ./red/
       dockerfile: ./Dockerfile
@@ -7,6 +8,7 @@ services:
       - traffic-light
     
   green-app:
+    image: trafficlight/green:v1.0
     build:
       context: ./green/
       dockerfile: ./Dockerfile
@@ -14,6 +16,7 @@ services:
       - traffic-light
 
   yellow-app:
+    image: trafficlight/yellow:v1.0
     build:
       context: ./yellow/
       dockerfile: ./Dockerfile
