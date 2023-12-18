@@ -11,7 +11,7 @@ services:
     image: trafficlight/green:v1.0
     build:
       context: ./green/
-      dockerfile: ./Dockerfile
+      dockerfile: ./dockerfile
     networks:
       - traffic-light
 
@@ -19,7 +19,7 @@ services:
     image: trafficlight/yellow:v1.0
     build:
       context: ./yellow/
-      dockerfile: ./Dockerfile
+      dockerfile: ./dockerfile
     networks:
       - traffic-light
 
