@@ -1,0 +1,40 @@
+services:
+  red-app:
+    build:
+      context: ./red/
+      dockerfile: ./Dockerfile
+    networks:
+      - traffic-light
+    
+  green-app:
+    build:
+      context: ./green/
+      dockerfile: ./Dockerfile
+    networks:
+      - traffic-light
+
+  yellow-app:
+    build:
+      context: ./yellow/
+      dockerfile: ./Dockerfile
+    networks:
+      - traffic-light
+
+  nginx-load-balancer:
+    build:
+      context: ./nginx-load-balancer/
+      dockerfile: ./Dockerfile
+    ports:
+      - "80:80"
+      - "3000:3000"
+      - "4000:4000"
+      - "5000:5000"
+    networks:
+      - traffic-light
+
+networks:
+  traffic-light:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+          gateway: 172.20.0.1
